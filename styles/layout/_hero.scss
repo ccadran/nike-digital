@@ -1,0 +1,103 @@
+body {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    height: 100vh;
+}
+.principal {
+    .nav-container {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        margin: 56px;
+        align-items: center;
+        .logos {
+            ul {
+                display: flex;
+                align-items: center;
+                color: white;
+
+                :nth-child(2) {
+                    margin: 0 24px;
+                }
+                img {
+                    width: 50%;
+                }
+            }
+        }
+        nav {
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                li {
+                    margin-right: 40px;
+                    color: white;
+                    font-family: $font1;
+                    text-transform: uppercase;
+                    font: size 26px;
+                }
+            }
+        }
+    }
+    .hero-container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        margin: 150px 56px;
+        color: white;
+        text-transform: uppercase;
+        font-family: $font1;
+        .title {
+            font-size: 100px;
+        }
+        .descro {
+            margin-left: 30%;
+            margin-top: 30px;
+            text-align: right;
+            width: 70%;
+            font-size: 26px;
+        }
+    }
+    .mentions {
+        align-items: flex-end;
+        margin: 200px 56px 56px 56px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+                text-transform: uppercase;
+                font-family: $font1;
+                color: white;
+                font-size: 27px;
+            }
+        }
+    }
+}
+.nike-display {
+    background: #000;
+    display: flex;
+    height: 100vh;
+    .content {
+        animation: autoScroll 10s linear infinite;
+        .test {
+        }
+        .test2 {
+            animation-delay: 5s;
+        }
+    }
+    img {
+        margin-top: 100px;
+    }
+}
+#bg-vids {
+    position: absolute;
+    height: 100vh;
+    z-index: 50%;
+    z-index: -5;
+}
+@keyframes autoScroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, -100%);
+    }
+}
