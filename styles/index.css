@@ -25,10 +25,14 @@ body {
   height: 100vh;
 }
 
+.principal {
+  position: relative;
+  margin: 0 56px;
+}
 .principal .nav-container {
   display: grid;
   grid-template-columns: 30% 70%;
-  margin: 56px;
+  margin: 56px 0;
   align-items: center;
 }
 .principal .nav-container .logos ul {
@@ -57,7 +61,7 @@ body {
 .principal .hero-container {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  margin: 150px 56px;
+  margin-top: 150px;
   color: white;
   text-transform: uppercase;
   font-family: rubik-light, sans-serif;
@@ -73,8 +77,9 @@ body {
   font-size: 26px;
 }
 .principal .mentions {
-  align-items: flex-end;
-  margin: 200px 56px 56px 56px;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
 }
 .principal .mentions ul {
   display: flex;
@@ -91,6 +96,7 @@ body {
   background: #000;
   display: flex;
   height: 100vh;
+  overflow: hidden;
 }
 .nike-display .content {
   -webkit-animation: autoScroll 10s linear infinite;
