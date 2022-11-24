@@ -32,7 +32,7 @@ body {
 .principal .nav-container {
   display: grid;
   grid-template-columns: 30% 70%;
-  margin: 56px 0;
+  margin: 26px 0;
   align-items: center;
 }
 .principal .nav-container .logos ul {
@@ -43,6 +43,9 @@ body {
 }
 .principal .nav-container .logos ul :nth-child(2) {
   margin: 0 24px;
+}
+.principal .nav-container .logos ul li {
+  display: flex;
 }
 .principal .nav-container .logos ul img {
   width: 70%;
@@ -58,9 +61,19 @@ body {
   font-family: rubik-light, sans-serif;
   text-transform: uppercase;
   font-size: 20px;
+  transition: 0.2s;
+}
+.principal .nav-container nav ul li:hover {
+  color: grey;
+  cursor: pointer;
 }
 .principal .nav-container nav ul li i {
   color: white;
+  transition: 0.2s;
+}
+.principal .nav-container nav ul li i:hover {
+  color: red;
+  cursor: pointer;
 }
 .principal .hero-container {
   display: grid;
@@ -82,7 +95,7 @@ body {
 }
 .principal .mentions {
   position: absolute;
-  bottom: 50px;
+  bottom: 26px;
   width: 100%;
 }
 .principal .mentions ul {
@@ -118,6 +131,7 @@ body {
       writing-mode: vertical-lr;
   transform: rotate(180deg);
   white-space: nowrap;
+  color: black;
 }
 .nike-display .content img {
   margin: 20px 0;
