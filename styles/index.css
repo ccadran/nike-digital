@@ -21,7 +21,7 @@ body li {
 
 body {
   display: grid;
-  grid-template-columns: 90% 10%;
+  grid-template-columns: 94% 6%;
   height: 100vh;
 }
 
@@ -39,12 +39,13 @@ body {
   display: flex;
   align-items: center;
   color: white;
+  font-size: 2rem;
 }
 .principal .nav-container .logos ul :nth-child(2) {
   margin: 0 24px;
 }
 .principal .nav-container .logos ul img {
-  width: 50%;
+  width: 70%;
 }
 .principal .nav-container nav ul {
   display: flex;
@@ -56,7 +57,10 @@ body {
   color: white;
   font-family: rubik-light, sans-serif;
   text-transform: uppercase;
-  font: size 26px;
+  font-size: 20px;
+}
+.principal .nav-container nav ul li i {
+  color: white;
 }
 .principal .hero-container {
   display: grid;
@@ -93,21 +97,35 @@ body {
 }
 
 .nike-display {
-  background: #000;
+  background: white;
   display: flex;
   height: 100vh;
   overflow: hidden;
+  justify-content: center;
 }
 .nike-display .content {
-  -webkit-animation: autoScroll 10s linear infinite;
-          animation: autoScroll 10s linear infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-animation: autoScroll linear 5s infinite;
+          animation: autoScroll linear 5s infinite;
+}
+.nike-display .content p {
+  text-transform: uppercase;
+  font-family: rubik-light, sans-serif;
+  font-size: 72px;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  white-space: nowrap;
+}
+.nike-display .content img {
+  margin: 20px 0;
 }
 .nike-display .content .test2 {
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
-}
-.nike-display img {
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 #bg-vids {
@@ -119,18 +137,18 @@ body {
 
 @-webkit-keyframes autoScroll {
   0% {
-    transform: translate(0, 0);
+    transform: translateY(0%);
   }
   100% {
-    transform: translate(0, -100%);
+    transform: translateY(-105%);
   }
 }
 
 @keyframes autoScroll {
   0% {
-    transform: translate(0, 0);
+    transform: translateY(0%);
   }
   100% {
-    transform: translate(0, -100%);
+    transform: translateY(-105%);
   }
 }/*# sourceMappingURL=index.css.map */
