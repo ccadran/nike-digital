@@ -14,6 +14,7 @@
 
 body {
   background: black;
+  overflow: hidden;
 }
 body li {
   list-style: none;
